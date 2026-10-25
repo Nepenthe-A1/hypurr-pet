@@ -3,6 +3,11 @@
 本项目是 [`PC2005-cloud/dsh-pet`](https://github.com/PC2005-cloud/dsh-pet) 的**二次创作（fork 素材包）**。
 本文件说明哪些部分是上游的、哪些是本项目新增的，以及再分发时的义务。
 
+- 本仓库的 [`LICENSE`](LICENSE)（MIT，Copyright (c) 2026 Nepenthe-A1）覆盖**本项目的原创部分**
+- 上游 [`LICENSE-UPSTREAM-dsh-pet`](LICENSE-UPSTREAM-dsh-pet)
+  （MIT，Copyright (c) 2026 PC2005-cloud）覆盖**插件本体**
+- 两者适用范围不同，不要把 `LICENSE` 当成对整个衍生包的授权声明
+
 ---
 
 ## 一、上游项目
