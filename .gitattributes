@@ -1,0 +1,24 @@
+# 统一换行：仓库里存 LF，检出时也不改写。
+# 原因：tools/ 里的 .py 是要在 macOS / Linux 上跑的脚本，
+# 默认的 core.autocrlf 会把它们变成 CRLF（对 shell 脚本是致命的，
+# 见 MAC-TESTING 记录：CRLF 会让 .command 报 `^M: command not found`）。
+* text=auto eol=lf
+
+# 二进制文件不做任何转换 —— 转换会直接损坏 webm。
+*.webm binary
+*.png binary
+*.jpg binary
+*.ico binary
+*.zip binary
+
+# 脚本明确按 LF 处理
+*.py text eol=lf
+*.sh text eol=lf
+*.command text eol=lf
+
+# Windows 启动器保持 CRLF（.bat/.vbs 用 CRLF 更保险）
+*.bat text eol=crlf
+*.vbs text eol=crlf
+
+# 这些是生成物/快照，不参与 diff 统计
+*.md linguist-documentation

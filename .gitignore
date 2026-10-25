@@ -1,0 +1,32 @@
+# --- 工作区中间产物：1000+ MB 的母版与中间帧，绝不进版本库 ---
+video/
+_portable/
+*.zip
+*.prev
+
+# --- 分发用的打包产物（走 GitHub Releases，不进 git）---
+electron/
+app/
+HypurrPet-*/
+
+# --- 处理过程的备份（工具会自动生成 .orig / .bak）---
+*.orig
+*.bak
+*.predespill
+dup/
+
+# --- 临时与调试 ---
+zz_*
+testhome/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# --- 编辑器 / 系统 ---
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+
+# --- 本机专属设置，不进仓库 ---
+*.local.json
