@@ -24,11 +24,15 @@ cp -r pet/hypurr-animation     ~/.dsh/dsh-pet/pet/hypurr-animation
 
 Windows 上 `~/.dsh` 即 `C:\Users\<你>\.dsh`。
 
-### 方式二：便携版（不需要 DSH）
+### 方式二：Windows 安装包（x64）
 
-到 [Releases](../../releases) 下载 `HypurrPet-Portable-*.zip`，解压后双击「启动 Hypurr.vbs」。
+到 [v1.1.0 Release](../../releases/tag/v1.1.0) 下载 `HypurrPet-Windows-Choose-Mode-v1.1.0-dsh-pet-0.3.8.zip`，解压后运行「安装.cmd」。可选 Codex 联动、DSH 联动或无需 Agent。Codex 和独立模式内含 dsh-pet 0.3.8；DSH 模式要求先在 DSH 中安装 dsh-pet 0.3.8。
 
-> ⚠️ 便携版内含 Electron 运行时，约 **330 MB**（压缩后约 150 MB），所以放在 Releases 而不是仓库里。
+### 方式三：macOS 桌宠（Apple Silicon / Intel）
+
+从同一个 [v1.1.0 Release](../../releases/tag/v1.1.0) 下载 `HypurrPet-Mac-No-Agent-2026-10-25.zip`，解压后运行「启动 Hypurr.command」。需要 macOS 11 或更新版本；尚未在 Mac 真机验证。
+
+> 两个平台的完整运行时包放在 Releases：Windows ZIP 约 210.3 MiB，macOS ZIP 约 266.7 MiB。
 
 ---
 
@@ -169,7 +173,7 @@ set FFPROBE=D:\ffmpeg\bin\ffprobe.exe
 
 ## 许可与致谢
 
-本仓库基于 [`PC2005-cloud/dsh-pet`](https://github.com/PC2005-cloud/dsh-pet)（**MIT**，v0.3.7）二次创作。
+本仓库基于 [`PC2005-cloud/dsh-pet`](https://github.com/PC2005-cloud/dsh-pet)（**MIT**）二次创作。v1.1.0 Release 的 Windows 和 macOS 包均内含 dsh-pet 0.3.8。
 
 - 插件本体版权归 **PC2005-cloud** 所有，依 MIT 许可使用
 - Hypurr 素材、工具链与补丁由 **Nepenthe-A1** 制作，同样以 **MIT** 发布
